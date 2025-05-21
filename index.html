@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriCast - Smart Weather for Farmers</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌾 AgriCast</h1>
+  <p>Get smart farming advice and real-time weather updates.</p>
+  <input type="text" id="location" placeholder="Enter your city or village..." />
+  <button onclick="getWeather()">Check Weather</button>
+  <div id="weather"></div>
+
+  <h2>👨🏽‍🌾 Ask the AI Assistant</h2>
+  <textarea id="question" placeholder="Ask about planting, watering, or pests..."></textarea>
+  <button onclick="askAI()">Ask</button>
+  <div id="ai-response"></div>
+
+  <script src="app.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>
